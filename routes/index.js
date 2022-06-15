@@ -35,10 +35,10 @@ router.get('/', function(req, res, next) {
     });
     res.render('index')
 });
-
+//SELECT * FROM kccStudent.pratyuh;
 router.post('/about', function(req, res, next) {
     console.log(req.body)
-    var sql = "INSERT INTO `kccStudent`.`form`(`name`, `country`, `age`) \
+    var sql = "INSERT INTO `kccStudent`.`pratyuh`(`name`, `country`, `age`) \
     VALUES ('" + req.body.name + "', '" + req.body.country + "', '" + req.body.age + "');"
     console.log(sql)
     con.connect()
